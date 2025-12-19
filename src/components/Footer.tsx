@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import adetechyLogo from "@/assets/adetechy-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -33,8 +34,8 @@ const Footer = () => {
         <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <a href="#home" className="text-2xl font-heading font-bold text-foreground">
-              Ade<span className="text-primary">techy</span>
+            <a href="#home">
+              <img src={adetechyLogo} alt="Adetechy Logo" className="h-10 w-auto" />
             </a>
             <p className="text-muted-foreground mt-4 mb-6">
               Crafting stunning websites and digital experiences that drive results.

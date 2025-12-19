@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import adetechyLogo from "@/assets/adetechy-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          <a href="#home" className="text-2xl font-heading font-bold text-foreground">
-            Ade<span className="text-primary">techy</span>
+          <a href="#home">
+            <img src={adetechyLogo} alt="Adetechy Logo" className="h-10 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

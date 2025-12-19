@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import adetechyLogo from "@/assets/adetechy-logo.png";
 
 const AboutSection = () => {
   const highlights = [
@@ -21,8 +22,7 @@ const AboutSection = () => {
               
               <div className="relative h-full flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-8xl font-heading font-bold text-primary/20 mb-4">A</div>
-                  <div className="text-2xl font-heading font-bold text-foreground">Adetechy</div>
+                  <img src={adetechyLogo} alt="Adetechy Logo" className="h-24 w-auto mx-auto mb-4" />
                   <div className="text-muted-foreground mt-2">Web Design Studio</div>
                 </div>
               </div>
