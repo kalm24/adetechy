@@ -1,3 +1,5 @@
+import adetechyLogo from "@/assets/adetechy-logo.png";
+
 const FounderSection = () => {
   return (
     <section className="py-24 relative">
@@ -33,8 +35,8 @@ const FounderSection = () => {
               
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 flex items-center justify-center mb-6 animate-glow-pulse">
-                    <span className="text-5xl font-heading font-bold text-primary">A</span>
+                  <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 flex items-center justify-center mb-6 animate-glow-pulse p-4">
+                    <img src={adetechyLogo} alt="Adetechy Logo" className="h-16 w-auto" />
                   </div>
                   <h3 className="text-3xl font-heading font-bold text-foreground">Adetechy</h3>
                   <p className="text-primary font-medium mt-2">Founder & Creative Director</p>
