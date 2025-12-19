@@ -1,4 +1,4 @@
-import { Globe, Target, TrendingUp, Search, ArrowRight } from "lucide-react";
+import { Globe, Target, TrendingUp, Search, ArrowRight, GraduationCap, PenTool } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -25,6 +25,18 @@ const ServicesSection = () => {
       title: "SEO Optimization",
       description: "Keyword research, on-page optimization, and analytics to improve your visibility.",
       features: ["Keyword Research", "On-Page SEO", "Technical SEO", "Analytics"],
+    },
+    {
+      icon: GraduationCap,
+      title: "Online Course Setup & Automation",
+      description: "End-to-end course creation, platform setup, and automated student enrollment systems.",
+      features: ["Course Platform Setup", "Payment Integration", "Email Automation", "Student Management"],
+    },
+    {
+      icon: PenTool,
+      title: "Content Writing",
+      description: "Engaging copy that converts visitors into customers with SEO-optimized content strategies.",
+      features: ["Website Copy", "Blog Articles", "Sales Copy", "Brand Messaging"],
     },
   ];
 
