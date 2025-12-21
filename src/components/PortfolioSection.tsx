@@ -1,16 +1,18 @@
 import { ExternalLink } from "lucide-react";
+import portfolio1 from "@/assets/portfolio-1.png";
+import portfolio2 from "@/assets/portfolio-2.png";
 
 const PortfolioSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "AI Personalization Website",
       category: "Web Design",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      image: portfolio1,
     },
     {
-      title: "SaaS Landing Page",
-      category: "Sales Funnel",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      title: "AI Business Platform",
+      category: "Web Design",
+      image: portfolio2,
     },
     {
       title: "Corporate Website",
@@ -31,6 +33,21 @@ const PortfolioSection = () => {
       title: "Lead Generation Funnel",
       category: "Sales Funnel",
       image: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=600&h=400&fit=crop",
+    },
+    {
+      title: "Mobile App Dashboard",
+      category: "Web Design",
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop",
+    },
+    {
+      title: "Fitness Brand Website",
+      category: "Sales Funnel",
+      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop",
+    },
+    {
+      title: "Tech Startup Landing",
+      category: "Digital Marketing",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop",
     },
   ];
 
