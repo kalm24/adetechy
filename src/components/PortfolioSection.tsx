@@ -1,6 +1,8 @@
 import { ExternalLink } from "lucide-react";
 import portfolio1 from "@/assets/portfolio-1.png";
 import portfolio2 from "@/assets/portfolio-2.png";
+import portfolio3 from "@/assets/portfolio-3.png";
+import portfolio4 from "@/assets/portfolio-4.png";
 
 const PortfolioSection = () => {
   const projects = [
@@ -15,6 +17,16 @@ const PortfolioSection = () => {
       image: portfolio2,
     },
     {
+      title: "Video Business Funnel",
+      category: "Sales Funnel",
+      image: portfolio3,
+    },
+    {
+      title: "Restaurant Website",
+      category: "Web Design",
+      image: portfolio4,
+    },
+    {
       title: "Corporate Website",
       category: "Web Design",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
@@ -23,11 +35,6 @@ const PortfolioSection = () => {
       title: "Marketing Campaign",
       category: "Digital Marketing",
       image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&h=400&fit=crop",
-    },
-    {
-      title: "Restaurant Website",
-      category: "Web Design",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop",
     },
     {
       title: "Lead Generation Funnel",
