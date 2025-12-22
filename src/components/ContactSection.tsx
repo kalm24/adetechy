@@ -1,22 +1,18 @@
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
-
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     business: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log(formData);
   };
-
-  return (
-    <section id="contact" className="py-24 relative">
+  return <section id="contact" className="py-24 relative">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -33,43 +29,32 @@ const ContactSection = () => {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-foreground font-medium mb-2">Name</label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
-                    placeholder="Your name"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  />
+                  <input type="text" className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors" placeholder="Your name" value={formData.name} onChange={e => setFormData({
+                  ...formData,
+                  name: e.target.value
+                })} />
                 </div>
                 <div>
                   <label className="block text-foreground font-medium mb-2">Email</label>
-                  <input
-                    type="email"
-                    className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
-                    placeholder="your@email.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  />
+                  <input type="email" className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors" placeholder="your@email.com" value={formData.email} onChange={e => setFormData({
+                  ...formData,
+                  email: e.target.value
+                })} />
                 </div>
               </div>
               <div>
                 <label className="block text-foreground font-medium mb-2">Business Name</label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
-                  placeholder="Your business name"
-                  value={formData.business}
-                  onChange={(e) => setFormData({ ...formData, business: e.target.value })}
-                />
+                <input type="text" className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors" placeholder="Your business name" value={formData.business} onChange={e => setFormData({
+                ...formData,
+                business: e.target.value
+              })} />
               </div>
               <div>
                 <label className="block text-foreground font-medium mb-2">Project Details</label>
-                <textarea
-                  className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors min-h-[150px] resize-none"
-                  placeholder="Tell us about your project..."
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                />
+                <textarea className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors min-h-[150px] resize-none" placeholder="Tell us about your project..." value={formData.message} onChange={e => setFormData({
+                ...formData,
+                message: e.target.value
+              })} />
               </div>
               <Button variant="hero" size="lg" className="w-full">
                 Send Message
@@ -107,7 +92,7 @@ const ContactSection = () => {
                 <div>
                   <div className="font-heading font-bold text-foreground">Phone</div>
                   <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                    (123) 456-7890
+                    +2348140776521
                   </a>
                 </div>
               </div>
@@ -127,18 +112,14 @@ const ContactSection = () => {
             <div className="pt-8 border-t border-border">
               <p className="text-muted-foreground text-sm mb-4">Partnering with Top Marketing Tools & Website Builders</p>
               <div className="flex flex-wrap gap-4">
-                {["WordPress", "Webflow", "Shopify", "HubSpot"].map((tool) => (
-                  <span key={tool} className="px-4 py-2 bg-secondary rounded-lg text-sm text-secondary-foreground">
+                {["WordPress", "Webflow", "Shopify", "HubSpot"].map(tool => <span key={tool} className="px-4 py-2 bg-secondary rounded-lg text-sm text-secondary-foreground">
                     {tool}
-                  </span>
-                ))}
+                  </span>)}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
