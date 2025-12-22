@@ -3,6 +3,11 @@ import portfolio1 from "@/assets/portfolio-1.png";
 import portfolio2 from "@/assets/portfolio-2.png";
 import portfolio3 from "@/assets/portfolio-3.png";
 import portfolio4 from "@/assets/portfolio-4.png";
+import portfolio5 from "@/assets/portfolio-5.png";
+import portfolio6 from "@/assets/portfolio-6.png";
+import portfolio7 from "@/assets/portfolio-7.png";
+import portfolio8 from "@/assets/portfolio-8.png";
+import portfolio9 from "@/assets/portfolio-9.png";
 
 const PortfolioSection = () => {
   const projects = [
@@ -27,34 +32,29 @@ const PortfolioSection = () => {
       image: portfolio4,
     },
     {
-      title: "Corporate Website",
+      title: "Roofing Business Website",
       category: "Web Design",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
+      image: portfolio5,
     },
     {
-      title: "Marketing Campaign",
+      title: "Global Hiring Platform",
+      category: "Web Design",
+      image: portfolio6,
+    },
+    {
+      title: "Social Media Agency",
       category: "Digital Marketing",
-      image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&h=400&fit=crop",
+      image: portfolio7,
     },
     {
-      title: "Lead Generation Funnel",
-      category: "Sales Funnel",
-      image: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=600&h=400&fit=crop",
-    },
-    {
-      title: "Mobile App Dashboard",
+      title: "HVAC Services Website",
       category: "Web Design",
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop",
+      image: portfolio8,
     },
     {
       title: "Fitness Brand Website",
-      category: "Sales Funnel",
-      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop",
-    },
-    {
-      title: "Tech Startup Landing",
-      category: "Digital Marketing",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop",
+      category: "Web Design",
+      image: portfolio9,
     },
   ];
 
