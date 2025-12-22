@@ -1,4 +1,4 @@
-import adetechyLogo from "@/assets/adetechy-logo.png";
+import founderPhoto from "@/assets/founder-photo.png";
 
 const FounderSection = () => {
   return (
@@ -27,27 +27,31 @@ const FounderSection = () => {
             </div>
           </div>
 
-          {/* Visual Side */}
+          {/* Visual Side - Founder Photo */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl bg-gradient-card border border-border overflow-hidden relative">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,hsl(1_98%_49%/0.15),transparent_70%)]" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,hsl(1_98%_49%/0.1),transparent_60%)]" />
+            {/* Main Photo Container */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 border border-border/50 group">
+              {/* Photo */}
+              <img 
+                src={founderPhoto} 
+                alt="Adetechy - Founder & Creative Director" 
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
               
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 flex items-center justify-center mb-6 animate-glow-pulse p-4">
-                    <img src={adetechyLogo} alt="Adetechy Logo" className="h-16 w-auto" />
-                  </div>
-                  <h3 className="text-3xl font-heading font-bold text-foreground">Adetechy</h3>
-                  <p className="text-primary font-medium mt-2">Founder & Creative Director</p>
-                  <p className="text-muted-foreground mt-4">Web Designer • Digital Strategist</p>
-                </div>
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+              
+              {/* Name Card at Bottom */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+                <h3 className="text-2xl font-heading font-bold text-foreground">Adetechy</h3>
+                <p className="text-primary font-medium mt-1">Founder & Creative Director</p>
               </div>
             </div>
 
-            {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
+            {/* Decorative Glow Elements */}
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/30 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-primary/20 rounded-full blur-3xl" />
+            <div className="absolute top-1/2 -right-4 w-20 h-20 bg-primary/25 rounded-full blur-2xl" />
           </div>
         </div>
       </div>
