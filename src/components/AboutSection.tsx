@@ -1,5 +1,5 @@
 import { CheckCircle } from "lucide-react";
-import adetechyLogo from "@/assets/adetechy-logo.png";
+import aboutPhoto from "@/assets/about-photo.png";
 
 const AboutSection = () => {
   const highlights = [
@@ -14,22 +14,27 @@ const AboutSection = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image/Visual Side */}
-          <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-card border border-border p-8 relative overflow-hidden">
-              <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,hsl(1_98%_49%/0.05)_50%,transparent_75%)]" />
-              <div className="absolute top-4 left-4 w-20 h-20 bg-primary/20 rounded-full blur-xl" />
-              <div className="absolute bottom-4 right-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+          <div className="relative group">
+            {/* Main Photo Container */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 border border-border/50">
+              {/* Photo */}
+              <img 
+                src={aboutPhoto} 
+                alt="Adetechy workspace - Professional web design studio" 
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
               
-              <div className="relative h-full flex items-center justify-center">
-                <div className="text-center">
-                  <img src={adetechyLogo} alt="Adetechy Logo" className="h-24 w-auto mx-auto mb-4" />
-                  <div className="text-muted-foreground mt-2">Web Design Studio</div>
-                </div>
-              </div>
+              {/* Subtle Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
 
+            {/* Decorative Glow Elements */}
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/30 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-primary/20 rounded-full blur-3xl" />
+            <div className="absolute top-1/3 -left-4 w-20 h-20 bg-primary/25 rounded-full blur-2xl" />
+
             {/* Floating Badge */}
-            <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-glow">
+            <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-glow z-10">
               <div className="text-2xl font-bold">5+</div>
               <div className="text-sm opacity-90">Years of Excellence</div>
             </div>
