@@ -47,7 +47,7 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <div>
-              <div className="text-3xl md:text-4xl font-heading font-bold text-primary">50+</div>
+              <div className="text-3xl md:text-4xl font-heading font-bold text-primary">500+</div>
               <div className="text-muted-foreground text-sm mt-1">Projects Completed</div>
             </div>
             <div>
