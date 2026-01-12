@@ -7,6 +7,10 @@ const tools = [
   { name: "Figma", logo: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" },
   { name: "Canva", logo: "https://cdn.worldvectorlogo.com/logos/canva-1.svg" },
   { name: "Kartra", logo: "https://www.kartra.com/images/logos/kartra-logo-dark.svg" },
+  { name: "Wix", logo: "https://cdn.worldvectorlogo.com/logos/wix.svg" },
+  { name: "WordPress", logo: "https://cdn.worldvectorlogo.com/logos/wordpress-icon-1.svg" },
+  { name: "Kajabi", logo: "https://cdn.worldvectorlogo.com/logos/kajabi-1.svg" },
+  { name: "Lovable", logo: "https://lovable.dev/icon.svg" },
 ];
 
 const ToolsSection = () => {
