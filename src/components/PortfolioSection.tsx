@@ -8,6 +8,9 @@ import portfolio6 from "@/assets/portfolio-6.png";
 import portfolio7 from "@/assets/portfolio-7.png";
 import portfolio8 from "@/assets/portfolio-8.png";
 import portfolio9 from "@/assets/portfolio-9.png";
+import portfolio10 from "@/assets/portfolio-10.png";
+import portfolio11 from "@/assets/portfolio-11.png";
+import portfolio12 from "@/assets/portfolio-12.png";
 
 const PortfolioSection = () => {
   const projects = [
@@ -55,6 +58,21 @@ const PortfolioSection = () => {
       title: "Fitness Brand Website",
       category: "Web Design",
       image: portfolio9,
+    },
+    {
+      title: "Dealership Lead Generation",
+      category: "Web Design",
+      image: portfolio10,
+    },
+    {
+      title: "Author & Speaker Website",
+      category: "Web Design",
+      image: portfolio11,
+    },
+    {
+      title: "Business Coach Website",
+      category: "Web Design",
+      image: portfolio12,
     },
   ];
 
