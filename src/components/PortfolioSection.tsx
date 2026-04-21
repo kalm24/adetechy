@@ -11,6 +11,10 @@ import portfolio9 from "@/assets/portfolio-9.png";
 import portfolio10 from "@/assets/portfolio-10.png";
 import portfolio11 from "@/assets/portfolio-11.png";
 import portfolio12 from "@/assets/portfolio-12.png";
+import portfolio13 from "@/assets/portfolio-13.webp";
+import portfolio14 from "@/assets/portfolio-14.webp";
+import portfolio15 from "@/assets/portfolio-15.webp";
+import portfolio16 from "@/assets/portfolio-16.webp";
 
 const PortfolioSection = () => {
   const projects = [
@@ -73,6 +77,26 @@ const PortfolioSection = () => {
       title: "Business Coach Website",
       category: "Web Design",
       image: portfolio12,
+    },
+    {
+      title: "Christian Author Landing Page",
+      category: "Landing Page",
+      image: portfolio13,
+    },
+    {
+      title: "Medicare Agent Website",
+      category: "Web Design",
+      image: portfolio14,
+    },
+    {
+      title: "Fleet Distribution Ebook Funnel",
+      category: "Landing Page",
+      image: portfolio15,
+    },
+    {
+      title: "Solar Energy Website",
+      category: "Web Design",
+      image: portfolio16,
     },
   ];
 
